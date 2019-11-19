@@ -114,7 +114,6 @@ function coleImage(){
 }
 
 function verlanderImage(){
-	pauseAllSounds();
 	document.getElementById("verlander-sound").play();
 	rc.src = "images/portraits/RC.png";
 }
