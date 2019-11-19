@@ -50,8 +50,6 @@ function reddickImages(el){
 		el.src = "images/bubble/JR3.jpg";
 	} else if (el.src.match("images/bubble/JR3.jpg")){
 		el.src = "images/bubble/JR4.jpg";
-		el.classList.add("no-cursor");
-		grayScaleGone(jr);
 		x++;
 		console.log(x);
 		document.getElementById("reddick-sound").play();
@@ -72,99 +70,56 @@ function bregmanImages(el){
 	jr.src = "images/dugout/ABteamstare.gif";
 	
 	// https://www.mlb.com/entertainment/walk-up/hou
-	pauseAllSounds();
 	document.getElementById("bregman-sound").play();
-	
-	// instead of passing each player individually, use a loop!
-	var i;
-	for (i = 0; i < 8; i++) {
-		grayScaleGone(allPlayers[i]);
-	}
+
 }
 
 function brantleyImage(){
-	pauseAllSounds();
 	document.getElementById("brantley-sound").play();
 	mb.src = "images/brantleys_double_play.png";
-	grayScaleGone(mb);
 }
 
 function alvarezImage(){
-	pauseAllSounds();
 	document.getElementById("alvarez-sound").play();
 	ya.src = "images/back_to_back.png";
-	grayScaleGone(ya);
 }
 
 function gurrielImage(){
-	pauseAllSounds();
 	document.getElementById("gurriel-sound").play();
 	yg.src = "images/yuli_troll_hair.gif";
-	grayScaleGone(yg);
 }
 
 function springerImage(){
-	pauseAllSounds();
 	document.getElementById("springer-sound").play();
 	gs.src = "images/springer-SI-covers.png";
-	grayScaleGone(gs);
 }
 
 function altuveImage(){
-	pauseAllSounds();
 	document.getElementById("altuve-sound").play();
 	ja.src = "images/alcs_mvp.png";
-	grayScaleGone(ja);
 }
 
 function correaImage(){
-	pauseAllSounds();
 	document.getElementById("correa-sound").play();
 	cc.src = "images/correa_see_you_later.gif";
-	grayScaleGone(cc);
 }
 
 function coleImage(){
-	pauseAllSounds();
 	if (jv.src = ""){
 		// play no sound
 	} else {
 		document.getElementById("cole-sound").play();
 	}
 	mm.src = "images/portraits/MM.png";
-	mm.classList.remove("no-cursor");
-	grayScaleGone(gc);
-	grayScaleGone(mm);
 }
 
 function verlanderImage(){
 	pauseAllSounds();
 	document.getElementById("verlander-sound").play();
-	rc.classList.remove("no-cursor");
 	rc.src = "images/portraits/RC.png";
-	grayScaleGone(jv);
-	grayScaleGone(rc);
 }
 
-function grayScaleGone(elem) {
-	elem.style.filter = "grayscale(0%)";
-}
-
-function pauseAllSounds(){
-	// instead of passing each sound individually, use a loop!
-	var i;
-	for (i = 0; i < allSounds.length; i++) {
-		allSounds[i].pause();
-		//https://stackoverflow.com/questions/43167907/sound-play-stop-pause
-		allSounds[i].currentTime = 0;
-	}
-}
 
 function reload(){
 	window.location.reload(false); 
-}
-
-// when the page gets to the last breakpoint the background colors some divs need to change
-function swapColors() {
-	// using CSS for now...
 }
