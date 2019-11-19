@@ -1,0 +1,160 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pitcher-catcher-col {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.player-col {
+	height: 100%;
+	width: 25%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.player-card {
+	height: 25%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.pitcher-container {
+	height: 75%;
+	width: 100%;
+	display: flex;
+}
+
+.pitcher-card {
+	height: 100%;
+	width: 50%;
+	display: flex;
+}
+
+.verlander {content: url("images/JV.png");}
+.coletrain {content: url("images/GC.png");}
+.ws2019 {content: url("");}
+
+.catcher-container {
+	height: 25%;
+	width: 100%;
+	display: flex;
+}
+
+.catcher-card {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+/* position images wherever you want inside their parent DIVs */
+.center-bottom {
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.center-left {
+	justify-content: left;
+	align-items: flex-end;
+}
+
+.center-right {
+	justify-content: right;
+	align-items: flex-end;
+}
+
+.center-fixed {
+	height: 64px;
+	width: 64px;
+	position: fixed;
+	top: 5%;
+	left: calc(100%/2 - 32px);
+}
+
+.center-content {
+	justify-content: center;
+	align-items: center;
+}
+
+.contain-image {
+	max-height: 95%;
+	max-width: 95%;
+}
+
+/* colors */
+.navy {background-color: #002D62;}
+.navy-alt {background-color: #002D62;} /* this changes at the final breakpoint */
+.orange-only {background-color: #EB6E1F;}
+.orange {background-color: #EB6E1F;}
+.light-orange {background-color: #F4911E;}
+.light-grey {background-color: #D3D3D3;}
+.grey {background-color: #505050;}
+.dark-grey {background-color: #282828;}
+.black {background-color: #000000;}
+.white-smoke {background-color: #F5F5F5;}
+.white {background-color: #FFFFFF;}
+.dark-blue-off {background-color: #0D1B35;}
+.dark-blue {background-color: #041235;}
+
+@media screen and (max-width: 1000px) {
+	#left {order: 1;}
+	#right {order: 2;}
+	
+	.player-col {
+		height: 100%;
+		width: 50%;
+	}
+	.pitcher-catcher-col {
+		height: 50%;
+		width: 100%;
+	}
+	.pitcher-container {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.verlander {content: url("images/JV-full.jpg");}
+	.coletrain {content: url("images/GC-full.jpg");}
+	
+	.catcher-container {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#left {order: 1;}
+	#right {order: 2;}
+	#jv-div {display: none;}
+	.center-fixed {display: none;}
+	
+	.player-col {
+		height: 100%;
+		width: 100%;
+	}
+	.pitcher-card {
+		height: 100%;
+		width: 100%;
+	}
+	
+	.ws2019 {content: url("images/ws2019.PNG");}
+	.coletrain {display: none;}
+	
+	.navy-alt {background-image: radial-gradient(#1D2949, #041235);}
+}
+
+
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="images/astros.ico" rel="icon" type="image/x-icon" />
+		<title>#TAKEITBACK</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+	
+		<div class="player-col" id="left">
+			<div class="player-card light-orange">
+				<img src="images/portraits/GS.png" class="contain-image" id="george">
+			</div>
+			<div class="player-card navy">
+				<img src="images/portraits/MB.png" class="contain-image" id="michael">
+			</div>
+			<div class="player-card orange">
+				<img src="images/portraits/YA.png" class="contain-image" id="yordan">
+			</div>
+			<div class="player-card navy-alt">
+				<img src="images/portraits/CC.png" class="contain-image" id="carlos">
+			</div>
+		</div>
+		
+		<div class="pitcher-catcher-col">
+			<div class="pitcher-container">
+				<div class="pitcher-card center-content dark-blue" id="gc-div">
+					<img class="contain-image coletrain" id="gerrit">
+					<img class="contain-image ws2019">
+				</div>
+				<div class="pitcher-card center-content dark-blue-off" id="jv-div">
+					<img class="contain-image verlander" id ="justin">
+				</div>
+			</div>
+			<div class="catcher-container">
+				<div class="catcher-card dark-blue-off">
+					<img class="contain-image" id="martin">
+				</div>
+				<div class="catcher-card dark-blue">
+					<img class="contain-image" id="robinson">
+				</div>
+			</div>
+		</div>
+		
+		<div class="player-col" id="right">
+			<div class="player-card navy">
+				<img src="images/portraits/JA.png" class="contain-image" id="jose">
+			</div>
+			<div class="player-card light-orange">
+				<img src="images/portraits/AB.png" class="contain-image" id="alex" onclick="bregmanImages(this)">
+			</div>
+			<div class="player-card navy-alt">
+				<img src="images/portraits/YG.png" class="contain-image" id="yuli">
+			</div>
+			<div class="player-card orange">
+				<img src="images/portraits/JR.png" class="contain-image" id="josh" onclick="reddickImages(this)">
+			</div>
+		</div>
+		
+		<img src="images/astros_logo_small.png" class="center-fixed" id="logo" onclick="reload()">
+		
+		<audio src="sounds/springer_atones.mp3" type="audio/mp3" id="springer-sound"></audio>
+		<audio src="sounds/gurriel_ties_it.mp3" type="audio/mp3" id="gurriel-sound"></audio>
+		<audio src="sounds/uncle_mike_walk_off.mp3" type="audio/mp3" id="brantley-sound"></audio>
+		<audio src="sounds/air_yordan.mp3" type="audio/mp3" id="alvarez-sound"></audio>
+		<audio src="sounds/bubble_pop.mp3" type="audio/mp3" id="reddick-sound"></audio>
+		<audio src="sounds/bregmans_old_town_road.mp3" type="audio/mp3" id="bregman-sound"></audio>
+		<audio src="sounds/altuve_sends_the_astros.mp3" type="audio/mp3" id="altuve-sound"></audio>
+		<audio src="sounds/correa_see_you_later.mp3" type="audio/mp3" id="correa-sound"></audio>
+		<audio src="sounds/new_single_season_strikeout_king.mp3" type="audio/mp3" id="cole-sound"></audio>
+		<audio src="sounds/third_career_no_hitter.mp3" type="audio/mp3" id="verlander-sound"></audio>
+		
+		<script src="script.js"></script>
+	</body>
+   
+</html>

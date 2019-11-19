@@ -1,0 +1,91 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	display: block;
+}
+
+.wins-row {
+	height: 30%;
+	width: 100%;
+	display: flex;
+}
+
+.one-fourth {
+	height: 100%;
+	width: 25%;
+	display: flex;
+}
+
+.division-champs-row {
+	height: 70%;
+	width: 100%;
+	display: flex;
+}
+
+.center-left, .center-right {
+	justify-content: center;
+	align-items: center;
+}
+
+.display-none {
+	display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+	.wins-row {
+		height: 50%;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.one-fourth {
+		height: 50%;
+		width: 50%;
+		display: flex;
+	}
+	.division-champs-row {
+		height: 50%;
+		width: 100%;
+		display: flex;
+	}
+	.center-right {
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.center-left {
+		justify-content: flex-start;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		height: 150%;
+	}
+	.wins-row {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.one-fourth {
+		height: 25%;
+		width: 100%;
+		display: flex;
+	}
+	.division-champs-row {
+		height: 25%;
+		width: 100%;
+		display: flex;
+	}
+	.center-left, .center-right {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+
+
+
